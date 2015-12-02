@@ -2,6 +2,7 @@ AndroidStaggeredGrid
 Caldroid
 OkHttpClient
 library-recyclerview
+SwipeRefreshLayout
 
 Category Name, Library Name [attr colspan="3"]
 
