@@ -22,3 +22,5 @@ Emulator,Genymotion,-,-
 https://github.com/gabrielemariotti/AndroidStudioTemplate
 https://github.com/gabrielemariotti/androiddev
 https://github.com/wasabeef/recyclerview-animators
+language
+http://www.akexorcist.com/2015/07/localization-activity-best-way-to-handle-language-en.html
