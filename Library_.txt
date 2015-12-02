@@ -1,4 +1,7 @@
 AndroidStaggeredGrid
+Caldroid
+OkHttpClient
+library-recyclerview
 
 Category Name, Library Name [attr colspan="3"]
 
@@ -15,3 +18,7 @@ REST,Retrofit,-,-
 Event Bus,Otto,EventBus,Rxjar
 
 Emulator,Genymotion,-,-
+
+https://github.com/gabrielemariotti/AndroidStudioTemplate
+https://github.com/gabrielemariotti/androiddev
+https://github.com/wasabeef/recyclerview-animators
