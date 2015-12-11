@@ -25,3 +25,36 @@ https://github.com/gabrielemariotti/androiddev
 https://github.com/wasabeef/recyclerview-animators
 language
 http://www.akexorcist.com/2015/07/localization-activity-best-way-to-handle-language-en.html
+
+
+OkHttpClient okHttpClient = new OkHttpClient();
+			Request.Builder builder = new Request.Builder();
+			Request request = builder.url("http://primary-cc.com/travel1/index.php/APIRestaurant").build();
+
+			okHttpClient.newCall(request).enqueue(new Callback() {
+				public void onFailure(Request request, IOException e) {
+					updateView("Error - " + e.getMessage());
+				}
+
+				public void onResponse(Response response) {
+					if (response.isSuccessful()) {
+						try {
+							updateView(response.body().string());
+						} catch (IOException e) {
+							e.printStackTrace();
+							updateView("Error - " + e.getMessage());
+						}
+					} else {
+						updateView("Not Success - code : " + response.code());
+					}
+				}
+
+				public void updateView(final String strResult) {
+					runOnUiThread(new Runnable() {
+						@Override
+						public void run() {
+							 Log.d("strResult", " "+strResult);
+						}
+					});
+				}
+			});
